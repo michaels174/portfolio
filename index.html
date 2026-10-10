@@ -28,13 +28,16 @@
   <body>
 
     <header id="header">
-      <img src="michael.jpg">
+      <img src="michael.jpg" alt="Michael Schmalz" class="profile-pic">
       <h1>Michael Schmalz</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#project_portfolio">Project Portfolio</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#reflections">Reflections</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>                 
     </header>
@@ -43,24 +46,189 @@
       <div class="inner">
         <div id="content"> 
           
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
+          <div id="about" class="content-region hide">
+            <h2>About</h2>
+            <h3>Computer Engineering Student | Iowa State University</h3>
             <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
+              Welcome to my portfolio!
+            </p>
+            <p>
+              I am a computer engineering student at Iowa State Univeristy with a passion for embedded systems, autonomy, and robotics. I enjoy
+              developing, programming, and building programs and machines that interact with the real-world. I believe that these fields can
+              provide a positive impact on peoples everyday lives. My drive to solve challenging problems, explore new technologies, 
+              and expand my knowledge and skills motivates me to grow as an engineer.
+            </p>
+            <h3>Career Objective</h3>
+            <p>
+              My goal is to become an embedded software engineer focused on developing impactful, efficient, and innovative solutions for real world applications. 
+              Through my education at Iowa State University, personal projects, and internship experience at Vermeer Corporation, I aim to continue strengthening 
+              my skills in computer engineering. I am eager to contribute to collaborative engineering teams, 
+              take on challenging technical problems, and develop technology that makes a meaningful impact.
+            </p>
+            <h3>Explore My Work</h3>
+            <p>
+            Projects - Explore my work in RISC-V processor design, autonomous robotics, and embedded systems.
+            </p>
+            <p>
+            Reflections - Learn about my academic growth, lessons learned, and how my experiences have shaped me as an engineer.
+            </p>
+            <p>
+            Resume - View my education, technical skills, projects, and professional background.
             </p>
           </div>
           
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
+          <div id="project_portfolio" class="content-region hide">
+            <h2>Project Portfolio</h2>
+            <h3>Scout | Senior Design</h3>
             <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
+            Scout FoodDen is a system designed to help households reduce food waste by tracking refrigerator inventory and estimating when food may spoil. 
+            It combines temperature and humidity sensors, barcode scanning, and a mobile app to help users monitor food freshness, manage groceries, 
+            discover recipes, and explore alternatives such as freezing, donating, or composting food.
             </p>
+            <p>
+            My role focuses on technical planning and system design. I help translate user needs into technical requirements, organize project flowcharts, 
+            prioritize essential features for the minimum viable product (MVP), and establish a development roadmap.
+            </p>
+            <p>
+            Through this project, I am developing skills in system design, building requirements, technical planning, and cross functional collaboration. 
+            I am also gaining experience translating customer needs into practical engineering solutions and communicating technical concepts to nontechnical stakeholders.
+            </p>
+            <p>
+            Scout FoodDen aims to reduce household food waste, save families money, and minimize environmental impacts. By helping users better understand and manage their 
+            refrigerator inventory, the system encourages more intentional grocery shopping and more sustainable food consumption.
+            </p>
+            <div style="text-align: center;">
+            <img src="Screenshot 2026-10-09 224411.png"
+            alt="Scout FoodDen Core Product Outline"
+            style="width: 100%; max-width: 650px; height: auto;">
+            <p style="font-size: 1.5rem; color: #020202; margin-top: 4px;">
+            Early Core Product Outline for Scout Project
+            </p>
+            </div>
+            <h3>Tiny ImageNet Image Classification | Hardware Design for Machine Learning</h3>
+            <p>
+            The Tiny ImageNet Image Classification is a convolutional neural network that classifies images into 200 Tiny ImageNet categories. 
+            Throughout this project I explored model optimization and deployment by implementing inference in C++ and investigating 8-bit quantization for embedded hardware.
+            </p>
+            <p>
+            My role focused on training and evaluating the machine learning model, analyzed layer-by-layer computational requirements, 
+            and developed a C++ inference implementation to compare performance across computing platforms.
+            </p>
+            <p>
+            I gained experience with TensorFlow, Keras, CNN architectures, C++, model profiling, MAC operation analysis, and quantization techniques.
+            </p>
+            <p>
+            Resources: TensorFlow, Keras, Python, C++, Tiny ImageNet dataset, x86 computing platform, and ZedBoard FPGA platform.
+            </p>
+            <div style="text-align: center;">
+              <img src="Screenshot 2026-10-09 230208.png"
+                  alt="Model outline"
+                  style="width: 100%; max-width: 100px; height: auto;">
+                  <p style="font-size: 1.5rem; color: #020202; margin-top: 4px;">
+            ML Model Layer Structure
+            </p>
+          </div>
+            <h3>RISC-V Processor | Computer Organization and Assembly Level Programming</h3>
+            <p>
+            In my computer organization and assembly level programming class I designed and tested an RV32I RISC-V processor using VHDL, implementing single-cycle and pipelined architectures. 
+            I also evaluated processor performance and explored techniques for improving instruction execution efficiency.
+            </p>
+            <p>
+            My role focused on implementing and testing processor components, investigating pipeline hazards, and evaluating forwarding and stalling techniques. 
+            This was done by analyzing timing performance and instruction execution results.
+            </p>
+            <p>
+            By the end of this project I developed skills in VHDL, digital logic design, computer architecture, assembly-level programming, pipelining, hazard handling, and hardware verification.
+            </p>
+            <p>
+            Resources: VHDL, Intel Quartus, ModelSim/Questa, RARS, RISC-V assembly, and processor testbenches.
+            </p>
+            <h3>Autonomous Vacuum Robot | Embedded Systems</h3>
+            <p>
+              The autonomous vacuum robot is a machine capable of navigating its environment and responding to obstacles using an embedded microcontroller and multiple sensors. 
+              The robot detected walls, objects, and drop-offs to navigate safely while navigating.
+            </p>
+            <p>
+              My role was made up of programming the robot in C using a Tiva TM4C123 microcontroller by integrating infrared, ultrasonic, bumper, and cliff sensors 
+              to detect obstacles and implemting appropriate navigation responses.
+            </p>
+            <p>
+              At the end of this project I had gained hands-on experience with embedded C programming, microcontroller peripherals, sensor integration, real-time decision-making, 
+              debugging, and autonomous robot navigation.
+            </p>
+            <p>
+              Resources: Tiva TM4C123GH6PM microcontroller, C, infrared sensors, ultrasonic distance sensor, bumper and cliff sensors, and embedded development tools.
+            </p>
+            <div style="text-align: center;">
+            <img src="CPRE288.jpg"
+            alt="CPRE 288"
+            style="width: 100%; max-width: 400px; height: auto;">
+            <p style="font-size: 1.5rem; color: #020202; margin-top: 4px;">
+            Vacuum Robot Programmed in Embedded Systems Course
+            </p>
+            </div>
+          </div>
+
+          <div id="experience" class="content-region hide">
+            <h2>Experience</h2>
+            <p>
+              During my summer internship at Vermeer Corporation, I worked as an Embedded Software Engineer Intern, developing and modifying machine software using MATLAB and Simulink. 
+              I gained hands-on experience with embedded communication protocols, including J1939 and UART, and developed an application to streamline software updates for production teams and engineers. 
+              Working in an Agile environment strengthened my collaboration, problem-solving, and adaptability while allowing me to apply my computer engineering knowledge to real-world industrial applications.
+            </p>
+            <div style="text-align: center;">
+            <img src="vermeer.jpeg"
+            alt="Vermeer"
+            style="width: 100%; max-width: 350px; height: auto;">
+            <p style="font-size: 1.5rem; color: #020202; margin-top: 4px;">
+            </p>
+            </div>
+          </div>
+          
+
+          <div id="reflections" class="content-region hide">
+            <h2>Reflections</h2>
+            <p>
+            </p>
+            <iframe
+              src="A Reflective Journey Navigating Your Cumulative Experience at Iowa State University - Michael Schmalz.pdf"
+              width="100%"
+              height="600px">
+          </iframe>
+          <p>
+          </p>
+          <iframe
+              src="General_Education_Reflection.pdf"
+              width="100%"
+              height="600px">
+          </iframe>
+          <p>
+          </p>
+          <iframe
+              src="CPR E 2320 - Case Study - MICHAEL SCHMALZ.pdf"
+              width="100%"
+              height="600px">
+          </iframe>
+          </div>
+
+          <div id="resume" class="content-region hide">
+            <h2>Resume</h2>
+            <p>
+            </p>
+            <iframe
+              src="Michael Schmalz_Resume_Portfolio.pdf"
+              width="100%"
+              height="600px">
+          </iframe>
           </div>
           
           <div id="contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
+              Email: michaelpschmalz@yahoo.com
+            </p>
+            <p>
+              Phone: 515-612-0489
             </p>
           </div>
           
@@ -69,7 +237,6 @@
     </div>
 
     <footer>  
-      Footer region
     </footer>
     
     <!-- Load additional JS scripts here -->

@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 /**
@@ -20,7 +20,7 @@ body {
 a {
   font-weight: normal;
   text-decoration: none; 
-  color:#EF6D3D;
+  color:#b771b5;
 }
 a:focus {
   outline: thin dotted;
@@ -93,20 +93,26 @@ blockquote p:last-child {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(background.jpg) center center no-repeat fixed;
+  background:url(background_1.jpg) center center no-repeat fixed;
   background-size:cover;
 }
 body {
-  max-width:800px;
+  max-width:900px;
   margin:25px auto;
 }
 header, #content, footer { 
-  background: rgba(0,0,0,.8); 
+  background: rgba(236, 234, 234, 0.8); 
   padding:25px;
-  color:#FFFFFF; 
+  color:#000000; 
 }
 iframe {
   max-width:100%;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* Menu Links */
@@ -122,14 +128,14 @@ ul.main-menu li a {
   margin-right:20px;
   font-size:2.0rem;
   border-bottom: solid transparent 3px;
-  color:#cfd2da;
+  color:#000000;
 }
 ul.main-menu li a:hover {
-  color:#FFFFFF;
+  color:#000000;
 }
 ul.main-menu li a.active {
-  color:#FFFFFF;
-  border-bottom-color:#EF6D3D;
+  color:#000000;
+  border-bottom-color:#b771b5;
 }
 
 /* Utility classes */
